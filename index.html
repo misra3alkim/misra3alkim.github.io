@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Mısrakuşum </title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio id="MyAudio" autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Tarayıcın desteklemiyor askım.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img  id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Çok seri tıkla</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Bu zamandan beri hayatıma renk katıyorsun bir tanem.</h2>
+			<div id="timer">
+				<b id="d"></b> Gün 
+				<b id="h"></b> Saat
+				<b id="m"></b> Dakika
+				<b id="s"></b> Saniye
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+
+			var audiom=document.getElementById("MyAudio");
+			audiom.volume=0.0;
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/Pic1.jpeg", "pic/Pic2.jpeg", "pic/Pic3.jpeg", "pic/Pic4.jpeg", "pic/Pic5.jpeg", "pic/Pic6.jpeg", 
+			"pic/Pic7.jpeg","pic/Pic7.jpeg","pic/Pic8.jpeg","pic/Pic9.jpeg","pic/Pic10.jpeg","pic/Pic11.jpeg","pic/Pic12.jpeg","pic/Pic13.jpeg"];
+			var imageIndex = 0;
+			var txtArray = ["Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum.","Seni çok seviyorum."];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
